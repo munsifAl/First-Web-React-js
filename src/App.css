@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli";
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background-color: #fff !important;
+}
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: #f70606;
+}
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar a:hover {
+  color: #3498db !important;
+}
+
+.brand_name {
+  color: #3498db;
+}
+.img_fluid_animated {
+  height: 600px;
+  width: 500px;
+  margin-left: 220px;
+  padding-top: 100px;
+  animation: pulse 3s ease infinite alternate,
+    nudge 7s linear infinite alternate;
+}
+
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Redressed", cursive;
+  color: black;
+}
+#header h2 {
+  font-size: 24px;
+  color: rgb(88, 100, 122);
+}
+
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 90px);
+  }
+
+  50% {
+    transform: translate(0, -90px);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact_div {
+  width: auto;
+  height: 700px;
 }
